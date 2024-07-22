@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("bg-theme bg-no-repeat bg-cover bg-center antialiased mx-auto px-8 sm:px-4", manrope.className)}>
+      <body className={cn("max-w-5xl bg-theme bg-no-repeat bg-cover bg-center antialiased mx-auto px-8 sm:px-4", manrope.className)}>
         {children}
       </body>
     </html>

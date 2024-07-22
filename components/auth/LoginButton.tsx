@@ -6,7 +6,7 @@ interface LoginButtonProps {
   children: React.ReactNode,
   mode?: "modal" | "redirect",
   asChild?: boolean;
-}
+};
 
 export const LoginButton = ({
   children,
@@ -15,7 +15,7 @@ export const LoginButton = ({
 }: LoginButtonProps) => {
   const router = useRouter();
 
-  const handleClick = () => {
+  const handleLogin = () => {
     router.push("/auth/login");
   };
 
@@ -28,7 +28,7 @@ export const LoginButton = ({
   }
 
   return (
-    <span onClick={handleClick} className="cursor-pointer">
+    <span onClick={handleLogin} className="cursor-pointer">
       {children}
     </span>
   );
